@@ -19,7 +19,15 @@
     <form method="post" action="aula2.2.php">
   <div class="form-group">
     <label for="exampleFormControlInput1">Nome do Cliente</label>
-    <input type="text" name="nome" class="form-control" id="exampleFormControlInput1" placeholder="nome@exemplo.com">
+    <input type="text" name="nome" class="form-control" placeholder="nome cliente">
+  </div>
+
+  <div class="form-group">
+  <label for="exampleFormControlInput1">idade Cliente</label>
+  <input type="text" name="idade" class="form-control" placeholder="idade cliente">
+  </div>
+  
+
   </div>
   <div class="form-group">
     <label for="exampleFormControlSelect1">Estado</label>
