@@ -13,46 +13,16 @@
   </head>
   <body>
 <div class="container">
-  <?php 
-  require "includes/menu.php";
-    
-  session_start();
+  <?php require "includes/menu.php";?>
+  <h1>Cadastro País</h1>
 
-  if(  isset($_SESSION['logar'] )){
-    echo "Bem vindo";
-  } else {
-    header("location: ../index.php");
-    session_destroy();
-  }
-   
-  ?>
-  <h1>Cadastro Produtinho</h1>
-
-  <form method="post" action="acao/acaoProduto.php" enctype="multipart/form-data">
+  <form method="post" action="acao/acaoPais.php">
   <div class="form-group">
-  <label for="exampleInputPassword1">Nome do Produto</label>
-  <input type="text" name="produto" class="form-control" id="exampleInputPassword1" placeholder="Senha">
+    <label for="exampleInputEmail1">Nome do País</label>
+    <input type="text" name="nome" class="form-control"  aria-describedby="emailHelp" placeholder="Cadastro País">
   </div>
-
-  
-  <div class="form-group">
-  <label for="exampleInputPassword1">Categoria do produto</label>
-  <input type="text" name="categoria" class="form-control" id="exampleInputPassword1" placeholder="Senha">
-  </div>
-
-  <div class="form-group">
-  <label for="exampleInputPassword1">Upload de Imagem</label>
-  <input type="file" name="foto" class="form-control" id="exampleInputPassword1" placeholder="Senha">
-  </div>
-
-  <div class="form-group">
- 
-   <label for="exampleFormControlTextarea1">Mensagem</label>
-    <textarea class="form-control" name="mensagem" rows="3"></textarea>
-  </div>
-
-  <input type="submit" name="enviar" value="Cadastrar Produto" class="btn btn-dark">
-  </form>
+  <input type="submit" name="enviar" value="Cadastrar País" class="btn btn-dark">
+</form>
 
   <?php require "includes/rodape.php";?>
 </div>
